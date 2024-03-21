@@ -1,17 +1,15 @@
 public class Desktop extends Computer {
-    private String caseType;
-    private int monitorLength;
+    private boolean monitorIncluded;
 
-    public Desktop(String OS, String CPU,String name,String caseType, int monitorLength){
-        super(OS,CPU,name);
-        this.caseType = caseType;
-        this.monitorLength = monitorLength;
+    public Desktop(int screenSize, int memory, boolean monitorIncluded){
+        super(screenSize,memory);
+        this.monitorIncluded = monitorIncluded;
     }
 
-    public String getCaseType(){
-       return caseType;
+    public boolean isMonitorIncluded() {
+        return monitorIncluded;
     }
-    public int getMonitorLength(){
-        return monitorLength;
+    public void replaceTowerCasing() {
+        System.out.println("Replaced tower case!");
     }
 }

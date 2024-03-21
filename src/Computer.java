@@ -1,27 +1,19 @@
 public class Computer {
-    private String OS;
-    private String CPU;
-    private String name;
+    private int screenSize;
+    private int memory;
 
-    public Computer(String OS, String CPU,String name){
-        this.OS = OS;
+    public Computer(int screenSize, int memory){
+        this.screenSize = screenSize;
+        this.memory = memory;
+    }
+    public int getScreenSize() {
+        return screenSize;
+    }
 
-        this.CPU = CPU;
-        this.name = name;
+    public int getMemory() {
+        return memory;
     }
-    public String getOS(){
-        return OS;
-    }
-    public String getCPU(){
-        return CPU;
-    }
-    public String getName(){
-        return name;
-    }
-    public void turnOn(){
-        System.out.println("On");
-    }
-    public void turnOff(){
-        System.out.println("Off");
+    public void installOperatingSystem() {
+        System.out.println("Installing OS.... beep beep boop boop");
     }
 }

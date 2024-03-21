@@ -37,19 +37,5 @@ public class VehicleRunner {
         myBoat.move(30);
         myBoat.brake();
         myBoat.honkBoatHorn();
-
-        Computer myComputer = new Computer("linux","Intel gen 6","Computer");
-        System.out.println(myComputer.getCPU());
-        System.out.println(myComputer.getOS());
-        System.out.println(myComputer.getName());
-        Laptop myLaptop = new Laptop("MacOS","Apple CPU", "Macbook", 5);
-        System.out.println(myLaptop.getTrackPadSize());
-        System.out.println(myLaptop.getOS());
-        System.out.println(myLaptop.getName());
-        Desktop myDesktop = new Desktop("Windows", "Intel gen 8", "Jerry", "Plastic", 24);
-        System.out.println(myDesktop.getCaseType());
-        System.out.println(myDesktop.getMonitorLength());
-        System.out.println(myDesktop.getOS());
-        System.out.println(myDesktop.getName());
     }
 }

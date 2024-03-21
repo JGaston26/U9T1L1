@@ -1,17 +1,19 @@
 public class Laptop extends Computer {
-    private int trackPadSize;
+    private boolean trackPadCalibrated;
 
-    public Laptop(String OS, String CPU,String name,int trackPadSize){
-        super(OS,CPU,name);
-        this.trackPadSize = trackPadSize;
+    public Laptop(int screenSize, int memory){
+        super(screenSize,memory);
+        trackPadCalibrated = false;
     }
-    public int getTrackPadSize(){
-        return trackPadSize;
+    public boolean isTrackPadCalibrated(){
+        return trackPadCalibrated;
     }
-    public void open(){
-        System.out.println("Im open");
-    }
-    public void close(){
-        System.out.println("I'm closed");
+    public void calibrateTrackpad() {
+        if (!trackPadCalibrated) {
+            trackPadCalibrated = true;
+            System.out.println("Calibration complete!");
+        } else {
+            System.out.println("No need to calibrate");
+        }
     }
 }
